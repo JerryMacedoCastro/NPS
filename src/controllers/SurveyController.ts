@@ -24,6 +24,7 @@ class SurveyController {
 
     try {
       const surveys = await surveysRepository.find();
+      console.log(surveys.length);
       return response.status(200).json(surveys);
     } catch (error) {
       return response.status(400).json({ message: error.message });
