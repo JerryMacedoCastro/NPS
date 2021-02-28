@@ -17,7 +17,7 @@ class UserController {
       email,
     });
     if (userAlreadyExists)
-      response.status(200).json({ message: 'User already exists' });
+      return response.status(400).json({ message: 'User already exists' });
 
     try {
       await usersRepository.save(user);
