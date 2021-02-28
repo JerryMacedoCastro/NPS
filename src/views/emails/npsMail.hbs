@@ -10,16 +10,16 @@
   }
 
   .answers {
-    width: 350px;
+    width: 400;
     display: flex;
     justify-content: space-between;
-
   }
+
   .level {
     display: flex;
     margin: 10px;
     justify-content: space-between;
-    width: 350px;
+    width: 400;
   }
   .value {
     padding: 10px;
@@ -40,21 +40,21 @@
   <h3>{{title}}</h3>
   <br/>
   <strong>{{description}}</strong>
-  <div>
+  <div class="level">
     <span>Pouco provável</span>
     <span>Muito provável</span>
   </div>
   <div class="answers">
-     <a class="value" href="">1</a>
-     <a class="value" href="">2</a>
-     <a class="value" href="">3</a>
-     <a class="value" href="">4</a>
-     <a class="value" href="">5</a>
-     <a class="value" href="">6</a>
-     <a class="value" href="">7</a>
-     <a class="value" href="">8</a>
-     <a class="value" href="">9</a>
-     <a class="value" href="">10</a>
+     <a class="value" href="{{link}}/1?U={{user_id}}">1</a>
+     <a class="value" href="{{link}}/2?U={{user_id}}">2</a>
+     <a class="value" href="{{link}}/3?U={{user_id}}">3</a>
+     <a class="value" href="{{link}}/4?U={{user_id}}">4</a>
+     <a class="value" href="{{link}}/5?U={{user_id}}">5</a>
+     <a class="value" href="{{link}}/6?U={{user_id}}">6</a>
+     <a class="value" href="{{link}}/7?U={{user_id}}">7</a>
+     <a class="value" href="{{link}}/8?U={{user_id}}">8</a>
+     <a class="value" href="{{link}}/9?U={{user_id}}">9</a>
+     <a class="value" href="{{link}}/10?U={{user_id}}">10</a>
   </div>
 
   <br/>
