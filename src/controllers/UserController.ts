@@ -11,10 +11,9 @@ class UserController {
       name: yup.string().required(),
       email: yup.string().email().required(),
     });
+    await schema.validate(request.body, { abortEarly: false });
 
     const usersRepository = getCustomRepository(UsersRepository);
-
-    await schema.validate(request.body, { abortEarly: false });
 
     const user = usersRepository.create({
       name,

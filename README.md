@@ -1,6 +1,5 @@
-**_Net Promoter Score: Projeto Node.js criado seguindo a semana NLW#04 da Rocketseat._**
-**Jerry Macedo Castro**
-**jerry.castro96@outlook.com**
+**_Net Promoter Score: Projeto Node.js criado seguindo a semana NLW#04 da Rocketseat._**  
+**Jerry Macedo Castro** - **jerry.castro96@outlook.com**
 
 ## Funcionamento
 
