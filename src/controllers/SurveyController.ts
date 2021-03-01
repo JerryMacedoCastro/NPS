@@ -11,24 +11,17 @@ class SurveyController {
       title,
       description,
     });
-    try {
-      await surveysRepository.save(survey);
-      return response.status(201).json(survey);
-    } catch (error) {
-      return response.status(400).json({ message: error.message });
-    }
+
+    await surveysRepository.save(survey);
+    return response.status(201).json(survey);
   }
 
-  async findAll(request: Request, response: Response) {
+  async findAll(_request: Request, response: Response) {
     const surveysRepository = getCustomRepository(SurveysRepository);
 
-    try {
-      const surveys = await surveysRepository.find();
+    const surveys = await surveysRepository.find();
 
-      return response.status(200).json(surveys);
-    } catch (error) {
-      return response.status(400).json({ message: error.message });
-    }
+    return response.status(200).json(surveys);
   }
 }
 
