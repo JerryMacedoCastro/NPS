@@ -22,8 +22,9 @@ describe('Surveys', () => {
       title: 'title sample 2',
       description: 'description sample 2',
     });
-
     const response = await request(app).get('/survey');
-    expect(response.body.lentgh).toBe(2);
+
+    //Objects don't have a .length property.
+    expect(Object.keys(response.body).length).toBe(2);
   });
 });

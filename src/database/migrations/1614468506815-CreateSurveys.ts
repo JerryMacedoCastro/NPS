@@ -6,7 +6,7 @@ export class CreateSurveys1614468506815 implements MigrationInterface {
       new Table({
         name: 'surveys',
         columns: [
-          { name: 'id', type: 'uuid' },
+          { name: 'id', type: 'uuid', isPrimary: true },
           { name: 'title', type: 'varchar' },
           { name: 'description', type: 'varchar' },
           { name: 'created_at', type: 'timestamp', default: 'now()' },
