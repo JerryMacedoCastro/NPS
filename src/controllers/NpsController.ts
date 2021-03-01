@@ -27,7 +27,9 @@ class NpsController {
 
     const totalAnswers = Object.keys(surveysUsers).length;
 
-    const calculus = ((promoters - defractores) / totalAnswers) * 100;
+    const calculus = Number(
+      (((promoters - defractores) / totalAnswers) * 100).toFixed(2)
+    );
 
     return response.status(200).json({
       defractores,
